@@ -155,3 +155,21 @@ def update_student():
             return
 
     print("Student not found.")
+
+def delete_student():
+    print("\n========== Delete Student ==========")
+
+    roll_no = input("Enter Roll Number to delete: ")
+
+    for student in students:
+        if student.roll_no == roll_no:
+            students.remove(student)
+            save_students(students)
+            print("\nStudent deleted successfully.")
+            return
+
+    print("Student not found.")
+
+def count_students():
+    print("\n========== Student Count ==========")
+    print(f"Total Students : {len(students)}")
