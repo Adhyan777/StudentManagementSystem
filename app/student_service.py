@@ -104,3 +104,54 @@ def search_student():
             return
 
     print("Student not found.")
+
+def update_student():
+    print("\n========== Update Student ==========")
+
+    roll_no = input("Enter Roll Number to update: ")
+
+    for student in students:
+        if student.roll_no == roll_no:
+
+            name = input("Enter New Name: ")
+            if validate_name(name):
+                student.name = name
+
+            age = input("Enter New Age: ")
+            if validate_age(age):
+                student.age = int(age)
+
+            gender = input("Enter New Gender (Male/Female/Other): ")
+            if validate_gender(gender):
+                student.gender = gender
+
+            branch = input("Enter New Branch: ")
+            if validate_branch(branch):
+                student.branch = branch
+
+            semester = input("Enter New Semester: ")
+            if validate_semester(semester):
+                student.semester = int(semester)
+
+            cgpa = input("Enter New CGPA: ")
+            if validate_cgpa(cgpa):
+                student.cgpa = float(cgpa)
+
+            phone = input("Enter New Phone Number: ")
+            if validate_phone(phone):
+                student.phone = phone
+
+            email = input("Enter New Email: ")
+            if validate_email(email):
+                student.email = email
+
+            address = input("Enter New Address: ")
+            if validate_address(address):
+                student.address = address
+
+            save_students(students)
+
+            print("\nStudent updated successfully.")
+            return
+
+    print("Student not found.")
