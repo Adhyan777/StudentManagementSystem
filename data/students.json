@@ -1,0 +1,14 @@
+[
+    {
+        "roll_no": "6",
+        "name": "Adhyan",
+        "age": 22,
+        "gender": "Male",
+        "branch": "CSE",
+        "semester": 7,
+        "cgpa": 7.2,
+        "phone": "1234567890",
+        "email": "adhyan.tyagi78@gmail.com",
+        "address": "Pune"
+    }
+]
