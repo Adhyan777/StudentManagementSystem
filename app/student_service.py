@@ -91,3 +91,16 @@ def view_students():
 
     for student in students:
         student.display()
+
+def search_student():
+    print("\n========== Search Student ==========")
+
+    roll_no = input("Enter Roll Number to search: ")
+
+    for student in students:
+        if student.roll_no == roll_no:
+            print("\nStudent Found\n")
+            student.display()
+            return
+
+    print("Student not found.")
